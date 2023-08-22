@@ -720,20 +720,6 @@
             });
         </script>
 
-        <div>
-            <h2 class="scroll_button_wrap">
-                <button type="button" class="scroll_button" data-target="page1">
-                    <img src="images/weekly.png?v=1" alt="weeklyLogo">
-                    <p>바로가기</p>
-                </button>
-                <button type="button" class="scroll_button" data-target="page2">
-                    <img src="images/weekend.png?v=1" alt="weekendLogo">
-                    <p>바로가기</p>
-                </button>
-            </h2>
-        </div>
-
-
         <section class="page" id="page1">
             <h2 class="page_tit">&quot;Week는 지금&quot;</h2>
             <div class="pic_lst">

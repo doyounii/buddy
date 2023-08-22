@@ -41,7 +41,7 @@
         .breadcrumb a { color:#fff; }
         .row { clear: both; height: 900px; width: 1200px;}
         .container { clear: both; height: 130px;}
-        .container:first-child {padding-top: 50px; padding-left: 393px;}
+        .container:first-child {padding-top: 50px; padding-left: 200px;}
         .container:last-child {padding-bottom: 50px;}
         .container .txt1 p { vertical-align: middle;}
         .txt1 {
@@ -204,9 +204,7 @@
                 </div>
                 <div class="row">
                     <section class="container">
-                        <span>W</span>
-                        <span>EE</span>
-                        <span>K CAN DO IT!</span>
+                        <span>Explore Empower Excel Together</span>
                     </section>
                     <section>
                         <div class="img1">

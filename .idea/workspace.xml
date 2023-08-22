@@ -1,224 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5970aad1-0faf-47bd-bb05-3fe1bf1b464f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/week01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/artifacts/week01_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/libraries/javax_servlet_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/libraries/mariadb_jdbc_java_client.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/ClassDiagram.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/UnitTaskFlow.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/UnitTaskFlow.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/admin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/company_introduce.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/company_social.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/company_weekstory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/classdiagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/dbtables.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/erd_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/erd_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/tableERD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/unitTaskFlow_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/database/usecase.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/faq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/companybutton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/home1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/home2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/weeknow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/index/weeksummary.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/join.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/masscom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/mypage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/notice_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/notice_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/notice_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/notice_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/term.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/weekcrew_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/weekcrew_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/img/weekcrew_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/kids.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/week.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/week_korean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/weekend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/weeklogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/logo/weekly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/db/DBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/db/MariaDBCon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Faq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Masscom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/dto/Weekcrew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/util/AES256.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/vo/Archive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/src/com/week/vo/Qna.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/WEB-INF/lib/javax.servlet-api-4.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/WEB-INF/lib/mariadb-java-client-3.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/WEB-INF/lib/tomcat-servlet-api-9.0.78.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/archive/archiveList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/addBoard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/addBoardPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/boardList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/delBoard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/getBoard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/updateBoard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/board/updateBoardPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/business/weekend.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/business/weekly.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/business/weekmarket.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/comment/addCommentPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/comment/delCommentPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/company/company.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/company/contribution.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/contact/map.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/encoding.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/faq/faqList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/ft.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/google.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/hd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/bg_social_ptn01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/bg_visual_overview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/bigWeekLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/book.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/boy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/boybook.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/boys.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/btn_media_next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/btn_media_prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/chunjae_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/game.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/girls.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/glass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/happyedu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/ico_foot_sns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/icon_attach.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/icon_reply.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/icon_test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/iconset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_main_keyVisual01_summer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_main_keyVisual03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_mark_foot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_social_main01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_social_main02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_social_main03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/img_social_main04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/library.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/logo_ori.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/tel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/textbook.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thinkkid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/thumb6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week_fab.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week_korean-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week_korean.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/week_korean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/weekend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/weeklogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/weekly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/images/로고/logo_ori.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/jquery.dataTables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/masscom/addMasscom.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/masscom/addMasscomPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/masscom/masscom.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/masscom/masscomList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/adminBoard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/adminMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/adminMasscom.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/adminWeekcrew.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/deleteMasscom.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/admin/deleteWeekcrew.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/delMember.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/idcheck.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/idload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/join.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/joinpro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/loginpro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/logout.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/modify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/modifypro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/mypage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/member/term.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/addQuestion.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/addQuestionPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/delQna.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/getQna.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/qnaList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/updateQna.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/qna/updateQnaPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/apply.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/applyPro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/applyRS.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_ai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_bookd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_company.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_contribution1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_contribution2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_contribution3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_contribution4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_exam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_family.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_mealandsnack.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_refresh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/img_worktools.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/library.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/images/nguyen-dang-hoang-nhu-FrzGKG2Yvpw-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/web/weekcrew/weekcrew.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/week01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/week01_hansun.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/week_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +32,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/doyouni/mymy/codeWonders/CodeWonders/codewonders",
+    "last_opened_file_path": "D:/doyouni/mymy/Buddy/buddy/buddy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -261,6 +53,7 @@
       <workItem from="1692194871726" duration="27000" />
       <workItem from="1692535217274" duration="16000" />
       <workItem from="1692700991292" duration="15000" />
+      <workItem from="1692703706668" duration="673000" />
     </task>
     <servers />
   </component>

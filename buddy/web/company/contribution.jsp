@@ -92,7 +92,7 @@
         .img-area > p {
             font-size: 20px; font-weight: bold; padding: 20px 20px 20px 7px;
         }
-        .inner span { margin: 0 240px; line-height: 100px;   font-weight: bold;     }
+        .inner span { margin: 0 100px; line-height: 100px;   font-weight: bold;     }
 
     </style>
 

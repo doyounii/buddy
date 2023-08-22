@@ -23,7 +23,7 @@ INSERT INTO MEMBER(id, pw, NAME, email, tel) VALUES
 INSERT INTO MEMBER(id, pw, NAME, email, tel) VALUES 
 ('so', '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', '소정환', 'so@buddy.com', '010-2222-1234');
 INSERT INTO MEMBER(id, pw, NAME, email, tel) VALUES 
-('yoon', '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', '윤도운', 'yoon@week.com', '010-3333-3333');
+('yoon', '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', '윤도운', 'yoon@buddy.com', '010-3333-3333');
 
 -- 공지사항 테이블 생성
 CREATE TABLE board(
@@ -35,25 +35,23 @@ CREATE TABLE board(
 	cnt INT DEFAULT 0);
 
 -- 공지사항 더미 데이터 삽입
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 1", "WeeK 공지사항 글 내용1입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 2", "WeeK 공지사항 글 내용2입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 3", "WeeK 공지사항 글 내용3입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 4", "WeeK 공지사항 글 내용4입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 5", "WeeK 공지사항 글 내용5입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 6", "WeeK 공지사항 글 내용6입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식1", "금주의 Buddy 소식 1입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식2", "금주의 Buddy 소식 2입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식3", "금주의 Buddy 소식 3입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식4", "금주의 Buddy 소식 4입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식5", "금주의 Buddy 소식 5입니다.", "admin" );
 
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 7", "WeeK 공지사항 글 내용7입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 8", "WeeK 공지사항 글 내용8입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 9", "WeeK 공지사항 글 내용9입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 10", "WeeK 공지사항 글 내용10입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 11", "WeeK 공지사항 글 내용11입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식6", "금주의 Buddy 소식 6입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식7", "금주의 Buddy 소식 7입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식8", "금주의 Buddy 소식 8입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식9", "금주의 Buddy 소식 9입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식10", "금주의 Buddy 소식 10입니다.", "admin" );
 
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 12", "WeeK 공지사항 글 내용12입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 13", "WeeK 공지사항 글 내용13입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 14", "WeeK 공지사항 글 내용14입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 15", "WeeK 공지사항 글 내용15입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 16", "WeeK 공지사항 글 내용16입니다.", "admin" );
-INSERT INTO board (title, content, author) VALUES ("공지사항 게시글 17", "WeeK 공지사항 글 내용17입니다.", "admin" );	
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식11", "금주의 Buddy 소식 11입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식12", "금주의 Buddy 소식 12입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식13", "금주의 Buddy 소식 13입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식14", "금주의 Buddy 소식 14입니다.", "admin" );
+INSERT INTO board (title, content, author) VALUES ("Buddy 소식15", "금주의 Buddy 소식 15입니다.", "admin" );
 
 -- 1:1 문의 테이블 생성
 CREATE TABLE qna(qno INT PRIMARY KEY AUTO_INCREMENT,
@@ -96,7 +94,7 @@ cnt INT DEFAULT 0);
 
 -- 자주하는 질문 더미 데이터 삽입
 INSERT INTO faq (fno, question, answer, cnt) VALUES
-	(1, '1. 회사의 역사와 비전은 무엇인가요?', '회사의 설립 배경과 미래 비전에 대한 정보는 '회사 소개' 페이지에서 확인하실 수 있습니다.', 0),
+	(1, '1. 회사의 역사와 비전은 무엇인가요?', '회사의 설립 배경과 미래 비전에 대한 정보는 회사 소개 페이지에서 확인하실 수 있습니다.', 0),
 	(2, '2. 다양한 강의 주제는 어떻게 선택되나요?', ' 최신 IT 트렌드와 시장 수요를 고려하여 다양한 주제의 강의를 선택하고 제공합니다. 교육 수요 조사와 업계 동향을 기반으로 선정합니다.', 0),
 	(3, '3. 강의의 품질은 어떻게 보장되나요?', '강의의 품질을 중요하게 여기며, 학생들의 피드백을 수시로 반영하여 컨텐츠와 강의 방식을 개선합니다.', 0),
 	(4, '4. 어떤 수업을 제공하나요?', '프로그래밍 언어부터 웹 개발, 앱 개발 등 다양한 코딩 교육 수업을 제공합니다. \r\n\r\n자세한 내용은 강좌 페이지를 확인해주세요!', 0),
