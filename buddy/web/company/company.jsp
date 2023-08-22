@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>위클리</title>
+    <title>회사소개</title>
 
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -41,7 +41,7 @@
         .breadcrumb a { color:#fff; }
         .row { clear: both; height: 900px; width: 1200px;}
         .container { clear: both; height: 130px;}
-        .container:first-child {padding-top: 50px; text-align: center;}
+        .container:first-child {padding-top: 50px; padding-left: 393px;}
         .container:last-child {padding-bottom: 50px;}
         .container .txt1 p { vertical-align: middle;}
         .txt1 {
@@ -188,24 +188,100 @@
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a> &gt <span>사업영역</span> &gt <span>위켄드</span> </p>
+            <p><a href="">HOME</a> &gt <span>회사소개</span> &gt <span>Buddy</span> </p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">위켄드</h2>
+                <h2 class="page_tit">Buddy</h2>
                 <hr>
+                <div class="inner">
+                    <div class="btn-group tab-group type3">
+                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/company.jsp">Buddy</a>
+                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="#scroll">Buddy 이야기</a>
+                        <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/contribution.jsp">사회공헌</a>
+                        <!-- <a href="#" class="button btn_tab">XR</a> -->
+                    </div>
+                </div>
                 <div class="row">
                     <section class="container">
                         <span>W</span>
                         <span>EE</span>
-                        <span>KEND!</span>
+                        <span>K CAN DO IT!</span>
                     </section>
                     <section>
                         <div class="img1">
-                            <p class="img1_tit">Weekend는 주말을 의미하는 week-end에서 따온 이름입니다. <br> 아이들이 취미, 자기 개발할 수 있도록 one-day class나 강의 프로그램을
-                                <br> 부모님들이 아이들의 학습이나 성장을 돕는 Tip과 노하우를 전수하는 컨텐츠를 제공하는 회사로서 준비중입니다.</p>
+                            <p class="img1_tit">함께 Buddy Learn의 친구들과 함께 배움의 여정을 나누며 더 나은 미래를 위한 준비를 시작해보세요.</p>
+                            <img src="/weekcrew/images/img_company.jpg" alt="회사 소개" />
+                        </div>
+                        <div class="txt1">
+                            <div class="info_list">
+                                <dl class="info_wrap">
+                                    <dd class="info_sub_text">
+                                        Buddy Learn은 친구들과 함께 배우며 새로운 지식과 기술을 습득할 수 있는 곳입니다. 우리는 친구들과의 협력과 지지가 학습의 핵심이라고 믿습니다. Buddy Learn은 코딩을 비롯한 다양한 주제에서 함께 공부하며, 친구들과의 유대감을 형성하고 배움의 즐거움을 느낄 수 있는 장소입니다.
+
+                                        우리의 목표는 학습을 보다 친근하고 재미있게 만드는 것입니다. Buddy Learn은 친구들과의 협력 프로젝트와 팀 활동을 통해 실전 경험을 제공하며, 이를 통해 현실 세계의 문제를 해결하고 더 나은 솔루션을 찾는 방법을 배울 수 있도록 돕습니다.</dd>
+                                </dl>
+                            </div>
                         </div>
                     </section>
+                    <section class="container">
+                        <div id="scroll" class="img2">
+                            <span>Buddy 이야기</span>
+                        </div>
+                    </section>
+                    <div class="row0">
+                        <section class="container0">
+                            <div class="img10">
+                                <p class="img10_tit"> 1️⃣ 협력과 커뮤니티</p>
+                                <img src="/weekcrew/images/img_ai.jpg" alt="" class="img20"/>
+                            </div>
+                            <div class="txt10">
+                                <div class="info_list0">
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 함께 협력하며 학습하는 커뮤니티</dt>
+                                    </dl>
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅  서로의 지식을 나누고 배우며 친밀한 관계를 형성</dt>
+                                    </dl>
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 함께 성장하는 Buddies(버디스)와 Pluz(플러즈)  </dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="container0">
+                            <div class="img10">
+                                <p class="img10_tit"> 2️⃣ 학습의 즐거움</p>
+                                <img src="/weekcrew/images/img_bookd.jpg" alt="" class="img20"/>
+                            </div>
+                            <div class="txt10">
+                                <div class="info_list0">
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 학습을 어렵고 지루한 과정이 아닌 즐거운 활동으로 만들기 </dt>
+                                    </dl>
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 재미있는 프로젝트와 흥미를 유발하는 활동을 통한 학습</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="container0">
+                            <div class="img10">
+                                <p class="img10_tit"> 3️⃣ 포용과 다양성 </p>
+                                <img src="/weekcrew/images/img_exam.jpg" alt="" class="img20"/>
+                            </div>
+                            <div class="txt10">
+                                <div class="info_list0">
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 모든 학습자를 환영하며, 다양한 배경과 경험을 존중</dt>
+                                    </dl>
+                                    <dl class="info_wrap0">
+                                        <dt class="info_sub_title0"> ✅ 서로의 차이를 포용하고 함께 성장하는 문화</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
             <script>

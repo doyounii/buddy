@@ -32,40 +32,36 @@
     <nav class="gnb">
         <ul class="menu">
             <li class="item1">
-                <a href="/company/company.jsp" class="dp1">회사소개</a>
+                <a href="/company/company.jsp" class="dp1">Buddy 소개</a>
                 <ul class="sub">
-                    <li><a href="/company/company.jsp">'윜'이란?</a></li>
-                    <li><a href="/company/company.jsp?#scroll">'윜' 스토리</a></li>
+                    <li><a href="/company/company.jsp">Buddy</a></li>
+                    <li><a href="/company/company.jsp?#scroll">Buddy 이야기</a></li>
                     <li><a href="/company/contribution.jsp">사회공헌</a></li>
                 </ul>
             </li>
             <li class="item2">
-                <a href="/board/boardList.jsp" class="dp1">윜 News</a>
+                <a href="/board/boardList.jsp" class="dp1">공지사항</a>
                 <ul class="sub">
-                    <li><a href="/board/boardList.jsp">공지사항</a></li>
-                    <li><a href="/masscom/masscomList.jsp">언론보도</a></li>
+                    <li><a href="/board/boardList.jsp">Buddy 알림판</a></li>
                 </ul>
             </li>
             <li class="item3">
-                <a href="/business/weekly.jsp" class="dp1">사업영역</a>
+                <a href="/business/weekly.jsp" class="dp1">Buddy 교육</a>
                 <ul class="sub">
-                    <li><a href="/business/weekly.jsp">위클리</a></li>
-                    <li><a href="/business/weekend.jsp">위켄드</a></li>
-                    <li><a href="/business/weekmarket.jsp">윜마켓</a></li>
+                    <li><a href="/business/weekly.jsp">교육 게시판</a></li>
                 </ul>
             </li>
             <li class="item4">
                 <a href="/faq/faqList.jsp" class="dp1">고객만족센터</a>
                 <ul class="sub">
                     <li><a href="/faq/faqList.jsp">자주하는질문</a></li>
-                    <li><a href="/qna/qnaList.jsp">1:1 문의</a></li>
+                    <li><a href="/qna/qnaList.jsp">1대1 문의</a></li>
                 </ul>
             </li>
             <li class="item5">
-                <a href="/weekcrew/apply.jsp" class="dp1">인재채용</a>
+                <a href="/weekcrew/apply.jsp" class="dp1">커뮤니티</a>
                 <ul class="sub">
-                    <li><a href="/weekcrew/apply.jsp">윜크루 되기</a></li>
-                    <li><a href="/weekcrew/weekcrew.jsp">윜크루 되면</a></li>
+                    <li><a href="/weekcrew/apply.jsp">Buddy 라운지</a></li>
                 </ul>
             </li>
         </ul>
