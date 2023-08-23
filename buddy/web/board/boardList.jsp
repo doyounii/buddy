@@ -114,11 +114,11 @@
         .inbtn:last-child { float:right; }
 
         .dataTables_wrapper {
-            position: relative;
-            clear: both;
-            width: 1200px;
-            margin: 0 auto;
-        }
+    position: relative;
+    clear: both;
+    width: 1200px;
+    margin: 5% auto;
+}
     </style>
 
     <link rel="stylesheet" href="../ft.css">
