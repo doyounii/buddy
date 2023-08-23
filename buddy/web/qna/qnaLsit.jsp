@@ -65,8 +65,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:130vh;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; /*height: 1400px;*/ }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -128,11 +127,11 @@
         .replyNum { margin-left: 10px; font-size: 14px; font-weight: 700; color: #dc3545 }
 
         .dataTables_wrapper {
-            position: relative;
-            clear: both;
-            width: 1200px;
-            margin: 0 auto;
-        }
+    position: relative;
+    clear: both;
+    width: 1200px;
+    margin: 5% auto;
+}
     </style>
     <link rel="stylesheet" href="../ft.css">
     <style>

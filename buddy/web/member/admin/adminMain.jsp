@@ -26,8 +26,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both;
-            background-image: url("../../weekcrew/images/library.jpg");
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px;}
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -45,8 +44,15 @@
     height: auto;
     margin: 0 auto;
 }
-        .page_tit { font-size:48px; text-align: center; color:#fff;
-            margin-bottom: 36px; }
+        .page_tit {
+            font-size: 48px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 36px;
+            background-color: #eb9362;
+            padding-top: 1em;
+            padding-bottom: 5.4rem;
+        }
 
         .breadcrumb {
     clear: both;
@@ -107,7 +113,7 @@
         .btn_group p {text-align: center;   line-height:3.6; }
         section {
             width: 100%;
-            padding: 50px 0px;
+            padding: 0px 0px;
         }
         section .inner {
             width: 1180px;
@@ -131,7 +137,7 @@
         section .inner .wrap a {
             width: 280px;
             float: left;
-            margin-right: 20px;
+            margin-right: 165px;
             background-color: #eb9362;
             text-align: center;
             font-size: 30px;
@@ -141,6 +147,7 @@
         section .inner .wrap a:last-child {
             /*제일 오른쪽 마지막 요소만 여백제거*/
             margin-right: 0px;
+            float: right;
         }
         section .inner .wrap a h2 {
             margin-bottom: 10px;
@@ -184,7 +191,7 @@
                 <p><a href="">HOME</a> &gt; <span>관리자 페이지</span></p>
             </div>
             <section>
-                <h2 class="page_tit">WEEK 관리자 페이지</h2>
+                <h2 class="page_tit">Buddy 관리자 페이지</h2>
                 <hr>
                 <div class="inner">
                     <div class="wrap">
@@ -192,13 +199,10 @@
                             📂 회원정보 관리
                         </a>
                         <a class="wrap-a" href="/member/admin/adminBoard.jsp">
-                            📝 공지사항 관리
+                            📝 Buddy 교육 관리
                         </a>
-                        <a class="wrap-a" href="/member/admin/adminMasscom.jsp">
-                            📰 언론보도 관리
-                        </a>
-                        <a class="wrap-a" href="/member/admin/adminWeekcrew.jsp">
-                            📩 윜크루 지원 관리
+                        <a class="wrap-a" href="/member/admin/adminCommunity.jsp">
+                            📰 커뮤니티 관리
                         </a>
                     </div>
                 </div>

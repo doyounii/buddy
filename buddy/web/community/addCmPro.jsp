@@ -16,7 +16,7 @@
     DBC con = new MariaDBCon();
     conn = con.connect();
     //4. sql 실행 및 실행결과 리턴
-    String sql = "insert into qna(title, content, author, lev, par) values(?,?,?,?,?)";
+    String sql = "insert into community(title, content, author, lev, par) values(?,?,?,?,?)";
     pstmt = conn.prepareStatement(sql);
     pstmt.setString(1, title);
     pstmt.setString(2, content);
@@ -26,20 +26,20 @@
     int cnt = pstmt.executeUpdate();
     if (lev == 0) {
         pstmt.close();
-        sql = "update qna set par=qno where par=0 and lev=0";
+        sql = "update community set par=comuno where par=0 and lev=0";
         pstmt = conn.prepareStatement(sql);
         pstmt.executeUpdate();
         cnt++;
     }
     if (cnt == 2) {
-        System.out.println("질문 글이 등록되었습니다.");
-        response.sendRedirect("/qna/qnaLsit.jsp");
+        System.out.println("게시글이 등록되었습니다.");
+        response.sendRedirect("/community/cmList.jsp");
     } else if (cnt == 1) {
         System.out.println("답변 글이 등록되었습니다.");
-        response.sendRedirect("/qna/qnaLsit.jsp");
+        response.sendRedirect("/community/cmList.jsp");
     } else {
         System.out.println("질문 및 답변 등록이 실패되었습니다.");
-        response.sendRedirect("/qna/addCm.jsp?lev="+lev+"&par="+par);
+        response.sendRedirect("/community/addCm.jsp?lev="+lev+"&par="+par);
         //out.println("<script>history.go(-1);</script>");
     }
     con.close(pstmt, conn);

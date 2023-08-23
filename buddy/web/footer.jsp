@@ -29,26 +29,18 @@
     </div>
     <div class="ft_wrap2">
         <p class="copyright">
-            <span>(주)Week</span>
+            <span>(주)Buddy</span>
             <span>서울시 금천구 가산로9길 54</span>
-            <span>대표자 서광</span>
+            <span>대표자 이소윤</span>
             <span>사업자등록번호 119-81-19350</span>
             <span>통신판매신고번호 제18-439호</span>
             <span class="end">부가통신사업신고 016712</span>
         </p>
         <p class="copyright">
-            <span>윜 (Week) 1577-0902</span>
-            <span>위클리 (Weekly) 1577-0218</span>
-            <span>위켄드 (Weekend) 1577-6226</span>
-            <span>윜마켓 (WeekMarket) 1577-1533</span>
-        </p>
-        <p class="locate">
-            <select name="sel" id="sel" onchange="loc()">
-                <option value="">FAMILY LINK</option>
-                <option value="https://chunjaetext.co.kr/">위클리</option>
-                <option value="http://www.milkt.co.kr/Main/Main_new">위켄드</option>
-                <option value="http://www.prinpia.co.kr/">윜마켓</option>
-            </select>
+            <span>버디 (Buddy) 1577-0902</span>
+            <span>버디스 (Buddies) 1577-0218</span>
+            <span>플러즈 (Pluz) 1577-6226</span>
+            <span>브러즈 (Bruzz) 1577-1533</span>
         </p>
         <p class="cp">COPYRIGHT 1981-2023 Week EDUCATION INC. ALL RIGHTS RESERVED.</p>
     </div>

@@ -22,7 +22,7 @@
     List<Community> cmList = new ArrayList<>();
     while (rs.next()) {
         Community cm = new Community();
-        cm.setComuno(rs.getInt("cmuno"));
+        cm.setComuno(rs.getInt("comuno"));
         cm.setTitle(rs.getString("title"));
         cm.setContent(rs.getString("content"));
         cm.setAuthor(rs.getString("author"));
@@ -49,7 +49,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>묻고 답하기 목록</title>
+    <title>Buddies 라운지</title>
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
@@ -65,8 +65,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:130vh;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; /*height: 1400px;*/ }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -128,11 +127,11 @@
         .replyNum { margin-left: 10px; font-size: 14px; font-weight: 700; color: #dc3545 }
 
         .dataTables_wrapper {
-            position: relative;
-            clear: both;
-            width: 1200px;
-            margin: 0 auto;
-        }
+    position: relative;
+    clear: both;
+    width: 1200px;
+    margin: 5% auto;
+}
     </style>
     <link rel="stylesheet" href="../ft.css">
     <style>
@@ -151,11 +150,11 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="/">HOME</a> &gt; <a href="/community/cmList.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 목록</span></p>
+                <p><a href="/">HOME</a> &gt; <span>커뮤니티</span> &gt; <span>Buddies 라운지</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">질문 및 답변 목록</h2>
+                    <h2 class="page_tit">Buddies 라운지</h2>
                     <hr>
                     <table class="tb1" id="myTable">
                         <thead>
@@ -181,10 +180,10 @@
                             </td>
                             <td class="item2">
                                 <% if (q.getLev() == 0) { %>
-                                <a href="/community/getCm.jsp?qno=<%=q.getComuno()%>"><%=q.getTitle() %>
+                                <a href="/community/getCm.jsp?comuno=<%=q.getComuno()%>"><%=q.getTitle() %>
                                 </a>
                                 <% } else { %>
-                                <a class="reply" href="/community/getCm.jsp?qno=<%=q.getComuno()%>">
+                                <a class="reply" href="/community/getCm.jsp?comuno=<%=q.getComuno()%>">
                                     <img src="../images/icon_reply.png" alt="[답변]"><%=q.getTitle() %>
                                 </a>
                                 <% } %>
@@ -215,7 +214,11 @@
                     </script>
                     <% if (sid != null) { %>
                     <div class="btn_group">
-                        <a href="/community/addCm.jsp?lev=0&par=0" class="inbtn">질문하기</a>
+                        <a href="/community/addCm.jsp?lev=0&par=0" class="inbtn">커뮤니티 글 작성</a>
+                    </div>
+                    <% } else { %>
+                    <div class="btn_group">
+                        <span>Buddy 라운지 이용은 회원만 가능합니다.</span>
                     </div>
                     <% } %>
                 </div>

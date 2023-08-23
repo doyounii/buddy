@@ -37,7 +37,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 목록</title>
+    <title>Buddy 교육</title>
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
@@ -54,15 +54,16 @@
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
-
-            background-repeat: no-repeat; background-position:center -250px; height: 1400px; }
+            background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
         .page {
-    clear: both;
-    width: 100vw;
-    height: auto;
-    position: relative;
+            clear: both;
+            width: 100vw;
+            height: auto;
+            position: relative;
+            margin-bottom: 10px;
+        }
 }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
@@ -139,11 +140,11 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="">HOME</a> &gt; <span>공지사항</span></p>
+                <p><a href="">HOME</a> &gt; <span>Buddy 교육</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">공지사항</h2>
+                    <h2 class="page_tit">Buddy 교육 게시판</h2>
                     <hr>
                     <table class="tb1" id="myTable">
                         <thead>
@@ -192,7 +193,11 @@
                                 <%
                                     if (sid !=null && sid.equals("admin")) {
                                 %>
-                                <a class="inbtn" href="/board/addBoard.jsp">글 쓰기</a>
+                                <a class="inbtn" href="/board/addBoard.jsp">작성하기</a>
+                                <%
+                                } else {
+                                %>
+                                    <span class="admin">교육 게시판의 글은 관리자만 작성할 수 있습니다.</span>
                                 <%
                                 }
                                 %>

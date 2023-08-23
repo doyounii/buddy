@@ -21,8 +21,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:680px;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 

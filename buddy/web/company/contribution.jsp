@@ -21,8 +21,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff;}
-        .contents { clear:both; height:1700px;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -34,7 +33,12 @@
 }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1500px; height: auto; margin:0 auto; }
+        .page_wrap {
+            clear: both;
+            /* width: 1500px; */
+            height: auto;
+            margin: 0 auto;
+        }
         .page_tit {
     font-size: 48px;
     text-align: center;
@@ -103,7 +107,7 @@
             color: #cdcdcd;
             background: #fff;
         }
-        .inner { clear: both; margin: 30px 18%; overflow: hidden; }
+        .inner { clear: both; margin: 30px 25%; overflow: hidden; }
         .inner > div {
             float: left; margin-left: 50px;
         }
@@ -131,8 +135,8 @@
                 <hr>
                 <div class="inner1">
                     <div class="btn-group tab-group type3">
-                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">윜이란?</a>
-                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp#scroll">윜 스토리</a>
+                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">Buddy?</a>
+                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp#scroll">Buddy 이야기</a>
                         <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/contribution.jsp">사회공헌</a>
                         <!-- <a href="#" class="button btn_tab">XR</a> -->
                     </div>

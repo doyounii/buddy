@@ -42,7 +42,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 글 상세보기</title>
+    <title>Buddy 교육 상세보기</title>
 
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -59,8 +59,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:800px;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -127,11 +126,11 @@
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a>  &gt <span>공지사항</span></p>
+            <p><a href="">HOME</a>  &gt <span>Buddy 교육</span> &gt <span>Buddy 교육 상세보기</span></p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">공지사항 상세보기</h2>
+                <h2 class="page_tit">Buddy 교육 상세보기</h2>
                 <hr>
                 <table class="tb1">
                     <tbody>
@@ -173,7 +172,7 @@
                             <%
                             }
                             %>
-                            <a href="/board/boardList.jsp" class="inbtn">공지사항 목록</a>
+                            <a href="/board/boardList.jsp" class="inbtn">Buddy 교육 목록</a>
                         </td>
                     </tr>
                 </div>

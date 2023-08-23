@@ -64,12 +64,11 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:1200px;
-
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 1000px; position:relative; }
+        .page { clear:both; width: 100vw; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap {

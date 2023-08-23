@@ -51,8 +51,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:1000px;
-            background-image: url("../../weekcrew/images/library.jpg");
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -134,6 +133,12 @@
             margin: auto;
             border-color: #eb9362;
         }
+        .dataTables_wrapper {
+            position: relative;
+            clear: both;
+            width: 1200px;
+            margin: 5% auto;
+        }
     </style>
 
     <link rel="stylesheet" href="../../jquery.dataTables.css">
@@ -148,11 +153,11 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="">HOME</a> &gt; <span>관리자 페이지</span> &gt; <span>윜소식 관리</span></p>
+                <p><a href="">HOME</a> &gt; <span>관리자 페이지</span> &gt; <span>Buddy 교육 관리</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">윜소식 관리</h2>
+                    <h2 class="page_tit">Buddy 교육 관리</h2>
                     <hr>
                     <div class="member">
                         <table class="tb1" id="myTable">

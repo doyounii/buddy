@@ -27,7 +27,7 @@
 </div>
 <div class="hd_wrap">
     <a href="/" class="logo">
-        <img src="<%=path8 %>/images/buddy_logo.png" alt="윜 로고">
+        <img src="<%=path8 %>/images/buddy_logo33.png" alt="윜 로고">
     </a>
     <nav class="gnb">
         <ul class="menu">
@@ -40,25 +40,18 @@
                 </ul>
             </li>
             <li class="item2">
-                <a href="/board/boardList.jsp" class="dp1">공지사항</a>
+                <a href="/board/boardList.jsp" class="dp1">Buddy 교육</a>
                 <ul class="sub">
-                    <li><a href="/board/boardList.jsp">Buddy 알림판</a></li>
+                    <li><a href="/board/boardList.jsp">교육 게시판</a></li>
                 </ul>
             </li>
             <li class="item3">
-                <a href="/bdEdu/eduList.jsp" class="dp1">Buddy 교육</a>
-                <ul class="sub">
-                    <li><a href="/bdEdu/eduList.jsp">교육 게시판</a></li>
-                </ul>
-            </li>
-            <li class="item4">
                 <a href="/faq/faqList.jsp" class="dp1">고객만족센터</a>
                 <ul class="sub">
                     <li><a href="/faq/faqList.jsp">자주하는질문</a></li>
-                    <li><a href="/qna/qnaList.jsp">1대1 문의</a></li>
                 </ul>
             </li>
-            <li class="item5">
+            <li class="item4">
                 <a href="/community/cmList.jsp" class="dp1">커뮤니티</a>
                 <ul class="sub">
                     <li><a href="/community/cmList.jsp">Buddy 라운지</a></li>

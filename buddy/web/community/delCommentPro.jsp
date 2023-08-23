@@ -5,7 +5,7 @@
 <%@ include file="../encoding.jsp" %>
 <%
     //2. 보내온 데이터 받기
-    int qno = Integer.parseInt(request.getParameter("qno"));
+    int comuno = Integer.parseInt(request.getParameter("comuno"));
     int cno = Integer.parseInt(request.getParameter("cno"));
 
     //3. DB 연결
@@ -14,12 +14,12 @@
     DBC con = new MariaDBCon();
     conn = con.connect();
     //4. sql 실행 및 실행결과 리턴
-    String sql = "DELETE FROM comment WHERE cno=?";
+    String sql = "DELETE FROM commucomment WHERE cno=?";
     pstmt = conn.prepareStatement(sql);
     pstmt.setInt(1, cno);
     int cnt = pstmt.executeUpdate();
     if (cnt > 0) {
-        response.sendRedirect("/qna/getCm.jsp?qno="+qno);
+        response.sendRedirect("/community/getCm.jsp?comuno="+comuno);
     } else {
         out.println("<script>alert('댓글 삭제 실패');</script>");
         out.println("<script>history.go(-1);</script>");

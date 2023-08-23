@@ -6,7 +6,7 @@
 <%-- 2. 인코딩 및 보내온 데이터 받기 --%>
 <%@ include file="/encoding.jsp" %>
 <%
-    int qno = Integer.parseInt(request.getParameter("qno"));
+    int comuno = Integer.parseInt(request.getParameter("comuno"));
     //3. DB연결
     Connection conn = null;
     PreparedStatement pstmt = null;
@@ -14,26 +14,26 @@
     DBC con = new MariaDBCon();
     conn = con.connect();
     //4. sql 실행 및 실행결과 받기
-    String sql = "SELECT * FROM qnalist WHERE qno=?";
+    String sql = "SELECT * FROM cmlist WHERE comuno=?";
     pstmt = conn.prepareStatement(sql);
-    pstmt.setInt(1, qno);
+    pstmt.setInt(1, comuno);
     //5. 실행결과(ResultSet) 인 해당 Qna 1건 qna(질문및답변) 객체에 넣기
     rs = pstmt.executeQuery();
-    Qna qna = new Qna();
+    Community com = new Community();
     if (rs.next()) {
-        qna.setQno(rs.getInt("qno"));
-        qna.setTitle(rs.getString("title"));
-        qna.setContent(rs.getString("content"));
-        qna.setAuthor(rs.getString("author"));
-        qna.setResdate(rs.getString("resdate"));
-        qna.setCnt(rs.getInt("cnt"));
-        qna.setName(rs.getString("name"));
-        qna.setLev(rs.getInt("lev"));
-        qna.setPar(rs.getInt("par"));
+        com.setComuno(rs.getInt("comuno"));
+        com.setTitle(rs.getString("title"));
+        com.setContent(rs.getString("content"));
+        com.setAuthor(rs.getString("author"));
+        com.setResdate(rs.getString("resdate"));
+        com.setCnt(rs.getInt("cnt"));
+        com.setName(rs.getString("name"));
+        com.setLev(rs.getInt("lev"));
+        com.setPar(rs.getInt("par"));
     }
     String sel = "";
-    if (qna.getLev() == 0) {
-        sel = "질문";
+    if (com.getLev() == 0) {
+        sel = "게시글";
     } else {
         sel = "답변";
     }
@@ -43,7 +43,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>질문 및 답변 글 상세보기</title>
+    <title>게시글 수정하기</title>
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
@@ -60,7 +60,6 @@
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
-
             background-repeat: no-repeat; background-position:center -250px; height: 1400px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -130,20 +129,20 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="/">HOME</a> &gt; <a href="/community/qnaList.jspst.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 글 수정보기</span></p>
+                <p><a href="/">HOME</a> &gt; <span>커뮤니티</span> &gt; <span>게시글 수정하기</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit"><%=sel %> 글 수정보기</h2>
+                    <h2 class="page_tit"><%=sel %> 수정하기</h2>
                     <br><br><hr><br><br>
-                    <form action="/community/updateQnaPro.jspro.jsp" method="post">
+                    <form action="/community/updateCmPro.jsp" method="post">
                         <table class="tb1" id="myTable">
                             <tbody>
                             <!-- 6. 해당 글번호에 대한 글 상세내용 출력 -->
                             <tr>
                                 <th>유형</th>
                                 <td>
-                                    <% if (qna.getLev() == 0) { %>
+                                    <% if (com.getLev() == 0) { %>
                                     <span>질문</span>
                                     <% } else { %>
                                     <span>답변</span>
@@ -153,31 +152,31 @@
                             <tr>
                                 <th>글 제목</th>
                                 <td>
-                                    <input type="text" name="title" id="title" class="indata" maxlength="98" value="<%=qna.getTitle() %>" required>
-                                    <input type="hidden" name="author" id="author" value="<%=qna.getAuthor() %>">
-                                    <input type="hidden" name="qno" id="qno" value="<%=qna.getQno() %>">
+                                    <input type="text" name="title" id="title" class="indata" maxlength="98" value="<%=com.getTitle() %>" required>
+                                    <input type="hidden" name="author" id="author" value="<%=com.getAuthor() %>">
+                                    <input type="hidden" name="comuno" id="comuno" value="<%=com.getComuno() %>">
                                 </td>
                             </tr>
                             <tr>
                                 <th>글 내용</th>
-                                <td><textarea cols="80" rows="10" name="content" id="content" class="indata2" maxlength="990"><%=qna.getContent() %></textarea></td>
+                                <td><textarea cols="80" rows="10" name="content" id="content" class="indata2" maxlength="990"><%=com.getContent() %></textarea></td>
                             </tr>
                             <tr>
                                 <th>작성자</th>
                                 <td>
                                     <% if (sid != null && sid.equals("admin")) { %>
-                                    <span title="<%=qna.getAuthor()%>"><%=qna.getName() %></span>
+                                    <span title="<%=com.getAuthor()%>"><%=com.getName() %></span>
                                     <% } else { %>
-                                    <span><%=qna.getName() %></span>
+                                    <span><%=com.getName() %></span>
                                     <% } %>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <% if (sid != null && (sid.equals("admin") || sid.equals(qna.getAuthor()))) { %>
+                                    <% if (sid != null && (sid.equals("admin") || sid.equals(com.getAuthor()))) { %>
                                     <input type="submit" class="inbtn" value="<%=sel %> 수정하기">
                                     <% } %>
-                                    <a href="/community/qnaList.jspst.jsp" class="inbtn">목록</a>
+                                    <a href="/community/cmList.jsp" class="inbtn">목록</a>
                                 </td>
                             </tr>
                             </tbody>

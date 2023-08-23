@@ -34,21 +34,6 @@
         memList.add(m);
     }
 
-    pstmt.close();
-    sql="select * from weekcrew order by wid desc";
-    pstmt = conn.prepareStatement(sql);
-    rs = pstmt.executeQuery();
-
-    List<Weekcrew> wcList = new ArrayList<>();
-    while (rs.next()) {
-        Weekcrew wc = new Weekcrew();
-        wc.setWid(rs.getInt("wid"));
-        wc.setName(rs.getString("name"));
-        wc.setEmail(rs.getString("email"));
-        wc.setContent(rs.getString("content"));
-        wc.setContent2(rs.getString("content2"));
-        wcList.add(wc);
-    }
 
     con.close(rs, pstmt, conn);
 %>
@@ -73,8 +58,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:800px;
-            background-image: url("../../weekcrew/images/library.jpg");
+        .contents { clear:both; min-height:100vh;
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -158,6 +142,12 @@
             font-size: 14px;
             margin: auto;
             border-color: #eb9362;
+        }
+        .dataTables_wrapper {
+            position: relative;
+            clear: both;
+            width: 1200px;
+            margin: 5% auto;
         }
     </style>
 

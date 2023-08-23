@@ -4,7 +4,7 @@
     int par = Integer.parseInt(request.getParameter("par"));
     String sel = "";
     if (lev == 0) {
-        sel = "질문";
+        sel = "게시글";
     } else {
         sel = "답변";
     }
@@ -103,11 +103,11 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="/">HOME</a> &gt; <a href="/community/qnaList.jspst.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 글쓰기</span></p>
+                <p><a href="/">HOME</a> &gt; <span>커뮤니티</span> &gt; <span>글 작성</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit"><%=sel %> 글쓰기</h2>
+                    <h2 class="page_tit"><%=sel %> 작성</h2>
                     <br><br><hr><br><br>
                     <form action="addCmPro.jsp" method="post">
                         <table class="tb1">
@@ -131,7 +131,7 @@
                         </table>
                         <div class="btn_group">
                             <input type="submit" value="<%=sel %> 등록" class="inbtn">
-                            <a href="/community/qnaList.jspst.jsp" class="inbtn">글 목록</a>
+                            <a href="/community/cmList.jsp" class="inbtn">커뮤니티 목록</a>
                         </div>
                     </form>
                 </div>
