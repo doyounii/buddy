@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
-<%@ page import="com.week.db.*" %>
-<%@ page import="com.week.dto.*" %>
+<%@ page import="com.buddy.db.*" %>
+<%@ page import="com.buddy.dto.*" %>
 <%@ page import="java.text.*" %>
 <%@ page import="java.util.Date" %>
 <!DOCTYPE html>
@@ -25,30 +25,47 @@
     <link rel="stylesheet" href="../../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both;
             background-image: url("../../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px;}
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page {
+    clear: both;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
         .page_tit { font-size:48px; text-align: center; color:#fff;
             margin-bottom: 36px; }
 
-        .breadcrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadcrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadcrumb a { color:#fff; }
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #f5be8b; border-bottom:1px solid #f5be8b;
-            background-color: #f5be8b; color:#fff; }
+            border-top:1px solid #eb9362; border-bottom:1px solid #eb9362;
+            background-color: #eb9362; color:#fff; }
         .tb1 td {line-height:32px;
-            border-bottom:1px solid #f5be8b;
-            border-top:1px solid #f5be8b; }
+            border-bottom:1px solid #eb9362;
+            border-top:1px solid #eb9362; }
 
         .tb1 .item1 { width:10%; text-align: center; }
         .tb1 .item2 { width:10%; text-align: center; max-width: 50px; overflow: hidden;}
@@ -80,7 +97,7 @@
             font-size: 38px;
             /* padding: 5px 20px; */
             margin: 50px auto 0px auto;
-            color: #f5be8b;}
+            color: #eb9362;}
     </style>
 
     <link rel="stylesheet" href="../../ft.css">
@@ -98,7 +115,7 @@
         }
         section .inner h1 {
             font: bold 24px/1 "arial";
-            color: #f5be8b;
+            color: #eb9362;
             text-align: center;
             margin-bottom: 50px;
         }
@@ -115,7 +132,7 @@
             width: 280px;
             float: left;
             margin-right: 20px;
-            background-color: #f5be8b;
+            background-color: #eb9362;
             text-align: center;
             font-size: 30px;
             padding: 11% 0;
@@ -130,7 +147,7 @@
         }
         .wrap-a {
             text-decoration: none;
-            color: #fffcf2;
+            color: #ffffff;
         }
         section .inner .wrap a h2 a {
             font: bold 16px/1 "arial";

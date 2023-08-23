@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%-- 1. 필요한 라이브러리 로딩 --%>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.week.db.*" %>
+<%@ page import="com.buddy.db.*" %>
 <%@ include file="../encoding.jsp" %>
 <%
     //2. 보내온 데이터 받기
@@ -31,7 +31,7 @@
         }
     } else {
         System.out.println("회원 삭제 실패");
-        //response.sendRedirect("/qna/updateQna.jsp?qno="+qno);
+        //response.sendRedirect("/qna/updateCm.jsp?qno="+qno);
         out.println("<script>alert('회원 삭제 실패');</script>");
         out.println("<script>history.go(-1);</script>");
     }

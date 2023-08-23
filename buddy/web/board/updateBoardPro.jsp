@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.week.dto.*" %>
-<%@ page import="com.week.db.*" %>
+<%@ page import="com.buddy.dto.*" %>
+<%@ page import="com.buddy.db.*" %>
 <%
     request.setCharacterEncoding("UTF-8");
     response.setContentType("text/html; charset=UTF-8");

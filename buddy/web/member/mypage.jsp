@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
-<%@ page import="com.week.db.*" %>
-<%@ page import="com.week.dto.*" %>
+<%@ page import="com.buddy.db.*" %>
+<%@ page import="com.buddy.dto.*" %>
 <%
     String id = (String )session.getAttribute("id"); //세션의 id 불러오기 (이미 로그인 했으니까 getparameter 아니고 세션으로!)
 
@@ -63,33 +63,51 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:1200px;
-            background-image: url("../weekcrew/images/library.jpg");
+
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
         .page { clear:both; width: 100vw; height: 1000px; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
-            padding-bottom: 2.4rem; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
+        .page_tit {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+    padding-bottom: 2.4rem;
+    background-color: #eb9362;
+}
 
-        .breadcrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadcrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadcrumb a { color:#fff; }
         .tb1 { width:600px; margin:100px auto; }
-        .tb1 th { width: 100px; background-color: #f5be8b; height: 48px; margin-top: 50px; margin-bottom: 50px; color:#fff;}
-        .tb1 td {  width: 300px;  line-height: 48px; padding-top:24px; padding-bottom:24px; padding-left: 20px; color: #f5be8b;
+        .tb1 th { width: 100px; background-color: #eb9362; height: 48px; margin-top: 50px; margin-bottom: 50px; color:#fff;}
+        .tb1 td {  width: 300px;  line-height: 48px; padding-top:24px; padding-bottom:24px; padding-left: 20px; color: #eb9362;
             max-width: 200px;
             overflow: hidden;}
         .tb1 .th1:first-child {border-radius: 50% 0 0 0;}
         .tb1 .th2 {border-radius: 0 0 0 50%;}
 
         .inbtn { display: inline-block; margin: 10px; padding: 10px 30px;
-            border-radius: 100px; background-color: #f5be8b; color: #fff; }
+            border-radius: 100px; background-color: #eb9362; color: #fff; }
     </style>
 
     <link rel="stylesheet" href="../ft.css">

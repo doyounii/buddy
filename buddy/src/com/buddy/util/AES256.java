@@ -1,4 +1,4 @@
-package com.week.util;
+package com.buddy.util;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;

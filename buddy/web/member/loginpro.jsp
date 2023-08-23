@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
-<%@ page import="com.week.db.*" %>
-<%@ page import="com.week.util.*" %>
+<%@ page import="com.buddy.db.*" %>
+<%@ page import="com.buddy.util.*" %>
 <%
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");

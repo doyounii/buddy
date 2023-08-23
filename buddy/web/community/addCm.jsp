@@ -1,11 +1,20 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%
+    int lev = Integer.parseInt(request.getParameter("lev"));
+    int par = Integer.parseInt(request.getParameter("par"));
+    String sel = "";
+    if (lev == 0) {
+        sel = "질문";
+    } else {
+        sel = "답변";
+    }
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 글 상세보기</title>
-
+    <title><%=sel %> 등록하기</title>
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
@@ -21,7 +30,7 @@
     <style>
         /* 본문 영역 스타일 */
         .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:800px;
+        .contents { clear:both; min-height:100vh;
 
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
@@ -60,21 +69,21 @@
     background-color: #eb9362;
 }
         .breadcrumb a { color:#fff; }
-        .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { width:150px; line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #fff; border-bottom:1px solid #fff;
-            background-color:#eb9362; color:#fff; }
+            border-top:1px solid #eb9362; border-bottom:1px solid #eb9362;
+            background-color:#eb9362; color:#fff; vertical-align:middle; }
         .tb1 td { width:650px; line-height:32px; padding-top:8px; padding-bottom:8px;
-            padding-left: 14px; border-top:1px solid #fff; }
+            border-bottom:1px solid #eb9362;
+            padding-left: 14px; border-top:1px solid #eb9362; }
 
         .indata { display:inline-block; width:600px; height: 48px; line-height: 48px;
             padding:14px; font-size:18px; }
         .indata2 { width: 600px; padding: 14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
             min-width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #eb9362; color:#fff; font-size: 18px; border-color: #eb9362; }
+            line-height: 48px; background-color: #333; color:#fff; font-size: 18px; }
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
     </style>
@@ -87,42 +96,43 @@
     </style>
 </head>
 <body>
+<div class="container">
     <div class="wrap">
         <header class="hd" id="hd">
-            <%@ include file="../header.jsp"%>
+            <%@ include file="../header.jsp" %>
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="">HOME</a> &gt <span>공지사항</span> &gt <span>공지사항 글 쓰기</span> </p>
+                <p><a href="/">HOME</a> &gt; <a href="/community/qnaList.jspst.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 글쓰기</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">공지사항 글 쓰기</h2>
-                    <hr>
-                    <form action="/board/addBoardPro.jsp" method="post">
+                    <h2 class="page_tit"><%=sel %> 글쓰기</h2>
+                    <br><br><hr><br><br>
+                    <form action="addCmPro.jsp" method="post">
                         <table class="tb1">
                             <tbody>
                             <tr>
-                                <th><label for="title">글 제목</label></th>
+                                <th><label for="title">제목</label></th>
                                 <td>
-                                    <input type="text" name="title" id="title" class="indata" required/>
-                                    <input type="hidden" name="author" id="author" value="<%=sid %>"/>
+                                    <input type="text" name="title" id="title" class="indata" maxlength="98" required>
+                                    <input type="hidden" name="lev" id="lev" value="<%=lev %>">
+                                    <input type="hidden" name="par" id="par" value="<%=par %>">
+                                    <input type="hidden" name="author" id="author" value="<%=sid %>">
                                 </td>
                             </tr>
                             <tr>
-                                <th><label for="content">글 내용</label></th>
+                                <th><label for="content">내용</label></th>
                                 <td>
-                                    <textarea rows="10" cols="80" maxlength="990" name="content" id="content" class="indata2" required></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input type="submit" value="글쓰기" class="inbtn">
-                                    <input type="reset" value="취소" class="inbtn">
+                                    <textarea name="content" id="content" cols="80" rows="10" maxlength="990" class="indata2" required></textarea>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
+                        <div class="btn_group">
+                            <input type="submit" value="<%=sel %> 등록" class="inbtn">
+                            <a href="/community/qnaList.jspst.jsp" class="inbtn">글 목록</a>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -131,5 +141,6 @@
             <%@ include file="../footer.jsp" %>
         </footer>
     </div>
+</div>
 </body>
 </html>

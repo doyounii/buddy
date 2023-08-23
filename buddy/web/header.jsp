@@ -27,7 +27,7 @@
 </div>
 <div class="hd_wrap">
     <a href="/" class="logo">
-        <img src="<%=path8 %>/images/bigWeekLogo.png" alt="윜 로고">
+        <img src="<%=path8 %>/images/buddy_logo.png" alt="윜 로고">
     </a>
     <nav class="gnb">
         <ul class="menu">
@@ -46,9 +46,9 @@
                 </ul>
             </li>
             <li class="item3">
-                <a href="/business/weekly.jsp" class="dp1">Buddy 교육</a>
+                <a href="/bdEdu/eduList.jsp" class="dp1">Buddy 교육</a>
                 <ul class="sub">
-                    <li><a href="/business/weekly.jsp">교육 게시판</a></li>
+                    <li><a href="/bdEdu/eduList.jsp">교육 게시판</a></li>
                 </ul>
             </li>
             <li class="item4">
@@ -59,9 +59,9 @@
                 </ul>
             </li>
             <li class="item5">
-                <a href="/weekcrew/apply.jsp" class="dp1">커뮤니티</a>
+                <a href="/community/cmList.jsp" class="dp1">커뮤니티</a>
                 <ul class="sub">
-                    <li><a href="/weekcrew/apply.jsp">Buddy 라운지</a></li>
+                    <li><a href="/community/cmList.jsp">Buddy 라운지</a></li>
                 </ul>
             </li>
         </ul>

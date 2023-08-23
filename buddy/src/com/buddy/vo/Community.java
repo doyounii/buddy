@@ -1,7 +1,7 @@
-package com.week.vo;
+package com.buddy.vo;
 
-public class Qna {
-    private int qno;
+public class Community {
+    private int comuno;
     private String title;
     private String content;
     private String author;
@@ -11,12 +11,12 @@ public class Qna {
     private int lev;
     private int par;
 
-    public int getQno() {
-        return qno;
+    public int getComuno() {
+        return comuno;
     }
 
-    public void setQno(int qno) {
-        this.qno = qno;
+    public void setComuno(int comuno) {
+        this.comuno = comuno;
     }
 
     public String getTitle() {
@@ -81,20 +81,5 @@ public class Qna {
 
     public void setPar(int par) {
         this.par = par;
-    }
-
-    @Override
-    public String toString() {
-        return "Qna{" +
-                "qno=" + qno +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", author='" + author + '\'' +
-                ", name='" + name + '\'' +
-                ", resdate='" + resdate + '\'' +
-                ", cnt=" + cnt +
-                ", lev=" + lev +
-                ", par=" + par +
-                '}';
     }
 }

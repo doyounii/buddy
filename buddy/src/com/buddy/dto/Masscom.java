@@ -1,4 +1,4 @@
-package com.week.dto;
+package com.buddy.dto;
 
 public class Masscom {
     private int mno;

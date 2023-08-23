@@ -4,8 +4,8 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.*" %>
-<%@ page import="com.week.db.*" %>
-<%@ page import="com.week.dto.*" %>
+<%@ page import="com.buddy.db.*" %>
+<%@ page import="com.buddy.dto.*" %>
 <%
     //2. DB 연결
     Connection conn = null;
@@ -60,13 +60,31 @@
         .page { clear:both; width: 100vw; height: auto; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
-            padding-bottom: 2.4rem; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
+        .page_tit {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+    padding-bottom: 2.4rem;
+    background-color: #eb9362;
+}
 
-        .breadcrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadcrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadcrumb a { color:#fff; }
         .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
@@ -98,6 +116,11 @@
         .ans { display:none; }
         .que:after { content:"▼"; padding-left: 36px;}
         .que.on:after { content:"▲"; }
+        .faq {
+            clear: both;
+            width: 1000px;
+            margin: auto;
+        }
     </style>
 
     <link rel="stylesheet" href="../ft.css">
@@ -117,18 +140,20 @@
                     <h2 class="page_tit">자주하는질문</h2>
                     <br><br>
                     <br><br>
-                    <ul class="qnalist">
-                        <% for (Faq f : faqList) { %>
-                        <li>
-                            <div class="que"><%=f.getQuestion() %>
-                            </div>
-                            <div class="ans"><%=f.getAnswer() %>
-                            </div>
-                        </li>
-                        <% } %>
-                        <br><br>
-                        <br><br>
-                    </ul>
+                    <div class="faq">
+                        <ul class="qnalist">
+                            <% for (Faq f : faqList) { %>
+                            <li>
+                                <div class="que"><%=f.getQuestion() %>
+                                </div>
+                                <div class="ans"><%=f.getAnswer() %>
+                                </div>
+                            </li>
+                            <% } %>
+                            <br><br>
+                            <br><br>
+                        </ul>
+                    </div>
                     <script>
                         $(document).ready(function () {
                             $(".qnalist li").click(function () {
@@ -154,8 +179,8 @@
 <%--<%@ page import="java.util.*" %>--%>
 <%--<%@ page import="java.util.Date" %>--%>
 <%--<%@ page import="java.text.*" %>--%>
-<%--<%@ page import="com.week.db.*" %>--%>
-<%--<%@ page import="com.week.dto.*" %>--%>
+<%--<%@ page import="com.buddy.db.*" %>--%>
+<%--<%@ page import="com.buddy.dto.*" %>--%>
 <%--<%@ include file="../head.jsp" %>--%>
 <%--<%--%>
 <%--    //2. DB 연결--%>
@@ -195,7 +220,12 @@
 <%--    .page { clear:both; width: 100vw; height: auto; position:relative; }--%>
 <%--    .page::after { content:""; display:block; width: 100%; clear:both; }--%>
 
-<%--    .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }--%>
+<%--    .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}--%>
 <%--    .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;--%>
 <%--        padding-bottom: 2.4rem; }--%>
 

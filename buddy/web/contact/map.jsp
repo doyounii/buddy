@@ -19,22 +19,45 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
-            background-image: url("../images/bg_visual_overview.jpg");
+
             background-repeat: no-repeat; background-position:center -250px; height: 910px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page {
+    clear: both;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
-            padding-bottom: 2.4rem; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
+        .page_tit {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+    padding-bottom: 2.4rem;
+    background-color: #eb9362;
+}
 
-        .breadcrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadcrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadcrumb a { color:#fff; }
 
     </style>

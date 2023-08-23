@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%-- 1. 필요한 라이브러리 로딩 --%>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.week.db.*" %>
+<%@ page import="com.buddy.db.*" %>
 <%@ include file="../encoding.jsp" %>
 <%
     //2. 보내온 데이터 받기
@@ -22,9 +22,9 @@
     pstmt.setString(3, content);
     int cnt = pstmt.executeUpdate();
     if (cnt > 0) {
-        response.sendRedirect("/qna/getQna.jsp?qno="+qno);
+        response.sendRedirect("/qna/getCm.jsp?qno="+qno);
     } else {
-        //response.sendRedirect("/qna/updateQna.jsp?qno="+qno);
+        //response.sendRedirect("/qna/updateCm.jsp?qno="+qno);
         out.println("<script>alert('글 수정 실패');</script>");
         out.println("<script>history.go(-1);</script>");
     }

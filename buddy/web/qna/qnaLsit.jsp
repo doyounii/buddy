@@ -4,8 +4,8 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.*" %>
-<%@ page import="com.week.db.*" %>
-<%@ page import="com.week.vo.*" %>
+<%@ page import="com.buddy.db.*" %>
+<%@ page import="com.buddy.vo.*" %>
 <%@ include file="../encoding.jsp" %>
 <%
     //2. DB 연결
@@ -64,30 +64,53 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:130vh;
-            background-image: url("../images/bg_visual_overview.jpg");
+
             background-repeat: no-repeat; background-position:center -250px; /*height: 1400px;*/ }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page {
+    clear: both;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
-            padding-bottom: 2.4rem; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
+        .page_tit {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+    padding-bottom: 2.4rem;
+    background-color: #eb9362;
+}
 
-        .breadcrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadcrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadcrumb a { color:#fff; }
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #f5be8b; border-bottom:1px solid #f5be8b;
-            background-color: #f5be8b; color:#fff; }
+            border-top:1px solid #eb9362; border-bottom:1px solid #eb9362;
+            background-color: #eb9362; color:#fff; }
         .tb1 td {line-height:32px;
-            border-bottom:1px solid #f5be8b;
-            border-top:1px solid #f5be8b; }
+            border-bottom:1px solid #eb9362;
+            border-top:1px solid #eb9362; }
 
         .tb1 .item1 { width:10%; text-align: center; }
         .tb1 .item2 { width:55%; }
@@ -97,7 +120,7 @@
 
         .inbtn { display:block;  border-radius:100px;
             min-width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px; }
+            line-height: 48px; background-color: #eb9362; color:#fff; font-size: 18px; }
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
         .reply { padding-left:14px; }
@@ -107,7 +130,8 @@
         .dataTables_wrapper {
             position: relative;
             clear: both;
-            margin-top: 70px;
+            width: 1200px;
+            margin: 0 auto;
         }
     </style>
     <link rel="stylesheet" href="../ft.css">
@@ -127,7 +151,7 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="/">HOME</a> &gt; <a href="/qna/qnaList.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 목록</span></p>
+                <p><a href="/">HOME</a> &gt; <a href="/community/cmList.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 목록</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
@@ -157,10 +181,10 @@
                             </td>
                             <td class="item2">
                                 <% if (q.getLev() == 0) { %>
-                                <a href="/qna/getQna.jsp?qno=<%=q.getQno()%>"><%=q.getTitle() %>
+                                <a href="/community/getQna.jspna.jsp?qno=<%=q.getQno()%>"><%=q.getTitle() %>
                                 </a>
                                 <% } else { %>
-                                <a class="reply" href="/qna/getQna.jsp?qno=<%=q.getQno()%>">
+                                <a class="reply" href="/community/getQna.jspna.jsp?qno=<%=q.getQno()%>">
                                     <img src="../images/icon_reply.png" alt="[답변]"><%=q.getTitle() %>
                                 </a>
                                 <% } %>
@@ -191,7 +215,7 @@
                     </script>
                     <% if (sid != null) { %>
                     <div class="btn_group">
-                        <a href="/qna/addQuestion.jsp?lev=0&par=0" class="inbtn">질문하기</a>
+                        <a href="/community/addQuestion.jspon.jsp?lev=0&par=0" class="inbtn">질문하기</a>
                     </div>
                     <% } %>
                 </div>

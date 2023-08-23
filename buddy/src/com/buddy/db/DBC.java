@@ -1,4 +1,4 @@
-package com.week.db;
+package com.buddy.db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

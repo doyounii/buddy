@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.week.dto.*" %>
-<%@ page import="com.week.db.*" %>
+<%@ page import="com.buddy.dto.*" %>
+<%@ page import="com.buddy.db.*" %>
 <%
     Connection conn = null;
     PreparedStatement pstmt = null;
@@ -51,39 +51,62 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
-            background-image: url("../weekcrew/images/library.jpg");
+
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page {
+    clear: both;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
-        .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
-            padding-bottom: 2.4rem; }
+        .page_wrap {
+    clear: both;
+    /* width: 1200px; */
+    height: auto;
+    margin: 0 auto;
+}
+        .page_tit {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+    padding-bottom: 2.4rem;
+    background-color: #eb9362;
+}
 
-        .breadscrumb { clear:both;
-            width:1200px; margin: 0 auto; text-align: right; color:#fff;
-            padding-top: 28px; padding-bottom: 28px; }
+        .breadscrumb {
+    clear: both;
+    /* width: 1200px; */
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #eb9362;
+}
         .breadscrumb a { color:#fff; }
         .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #f5be8b; border-bottom:1px solid #f5be8b;
-            background-color:#f5be8b; color:#fff; }
+            border-top:1px solid #eb9362; border-bottom:1px solid #eb9362;
+            background-color:#eb9362; color:#fff; }
         .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-bottom:1px solid #f5be8b;
-            padding-left: 14px; border-top:1px solid #f5be8b; }
+            border-bottom:1px solid #eb9362;
+            padding-left: 14px; border-top:1px solid #eb9362; }
 
         .indata { display:inline-block; width:300px; height: 48px; line-height: 48px;
             text-indent:14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
             min-width:100px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px;
-            float:left; margin-right: 20px; border-color: #f5be8b; }
+            line-height: 48px; background-color: #eb9362; color:#fff; font-size: 18px;
+            float:left; margin-right: 20px; border-color: #eb9362; }
         .inbtn:last-child { float:right; }
     </style>
 

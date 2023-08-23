@@ -124,7 +124,7 @@
             border: 2px solid #996633;
             border-radius: 20px;
             padding: 10px 20px;
-            background-color: #fffcf2;
+            background-color: #ffffff;
             height: 200px;
             width: 40%;
         }
