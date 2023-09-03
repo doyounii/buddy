@@ -69,7 +69,6 @@ html, css, javascript로 작성하였습니다. <br>
 <br>
 ## Table
 ![테이블 구현](./readmeimage/dbtables.png "테이블 구현")
-![테이블 구현](./readmeimage/tableERD.png "테이블 구현")
 <br>
 
 ## 기능흐름도 (Unit Task Flow)
