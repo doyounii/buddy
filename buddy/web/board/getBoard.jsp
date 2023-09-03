@@ -167,8 +167,8 @@
                             <%
                                 if (sid !=null && sid.equals("admin")) {
                             %>
-                            <a href="/board/updateBoard.jsp?bno=<%=bd.getBno() %>" class="inbtn">글 수정</a>
-                            <a href="/board/delBoard.jsp?bno=<%=bd.getBno() %>" class="inbtn">글 삭제</a>
+                            <a href="/board/updateBoard.jsp?bno=<%=bd.getBno() %>&mode=1" class="inbtn">글 수정</a>
+                            <a href="/board/delBoard.jsp?bno=<%=bd.getBno() %>&mode=0" class="inbtn">글 삭제</a>
                             <%
                             }
                             %>
