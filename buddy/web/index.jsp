@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>윜(Week)</title>
+    <title>버디(Buddy)</title>
     <%@ include file="head.jsp" %>
 
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -121,7 +121,7 @@
 
         .scroll_button {
             gap: 10px;
-            border: 2px solid #996633;
+            border: 2px solid #eb9362;
             border-radius: 20px;
             padding: 10px 20px;
             background-color: #ffffff;
@@ -304,7 +304,7 @@
         .pic_content {
             height: 450px;
             width: 83%;
-            border: 4px solid #996633;
+            border: 4px solid #eb9362;
             border-radius: 10px;
             padding: 10px;
             text-align: center;
@@ -654,13 +654,13 @@
                     <input type="radio" name="vs_ra" id="vs_ra1" class="vs_ra" checked>
                     <div class="bg_box"></div>
                     <h2 class="vs_tit1">우리 아이들의 <br> 행복한 내일을 위해<br>
-                        <strong>Week가 <br> 끊임 없는 노력을 하겠습니다.</strong></h2>
+                        <strong>Buddy가 <br> 끊임 없는 노력을 하겠습니다.</strong></h2>
                 </li>
                 <li class="item2">
                     <input type="radio" name="vs_ra" id="vs_ra2" class="vs_ra">
                     <div class="bg_box"></div>
                     <h2 class="vs_tit2">아이들의 성적으로 <br>확실하게 이어지는<br>
-                        <strong>Week만의 맞춤형 교육으로 <br> 초대합니다!</strong>
+                        <strong>Buddy만의 맞춤형 교육으로 <br> 초대합니다!</strong>
                     </h2>
                 </li>
             </ul>
@@ -721,7 +721,7 @@
         </script>
 
         <section class="page" id="page1">
-            <h2 class="page_tit">&quot;Week는 지금&quot;</h2>
+            <h2 class="page_tit">&quot;Buddy는 지금&quot;</h2>
             <div class="pic_lst">
                 <div class="pic_item1">
                     <a href="">
@@ -738,12 +738,12 @@
                         <div class="pic_content">
                             <img src="images/game.jpg" alt="">
                             <p class="pic_com">2학기 준비, 어떻게 하고 계세요?</p>
-                            <h3 class="pic_tit">Week 교육과 함께! 게임으로 즐겁게! <br></h3>
+                            <h3 class="pic_tit">Buddy 교육과 함께! 게임으로 즐겁게! <br></h3>
                         </div>
                     </a>
                 </div>
             </div>
-            <p class="additional_text">Week의 꿀팁 가득한 SNS 콘텐츠를 소개합니다!</p>
+            <p class="additional_text">Buddy의 꿀팁 가득한 SNS 콘텐츠를 소개합니다!</p>
             <div class="pic_lst">
                 <div class="pic_item">
                     <a href="">
@@ -758,8 +758,8 @@
                     <a href="">
                         <div class="pic_content">
                             <img src="images/textbook.jpg" alt="평가문제집">
-                            <p class="pic_com">Week 자습서 & 평가문제집 신간 출시!</p>
-                            <h3 class="pic_tit">주요과목부터 예체능까지!, Week 자습서로 끝내자!<br></h3>
+                            <p class="pic_com">Buddy 자습서 & 평가문제집 신간 출시!</p>
+                            <h3 class="pic_tit">주요과목부터 예체능까지!, Buddy 자습서로 끝내자!<br></h3>
                         </div>
                     </a>
                 </div>
@@ -768,7 +768,7 @@
         <section class="page" id="page2">
             <div class="page_wrap">
                 <h2 class="page_tit">사회공헌</h2>
-                <p class="page_com">Week는 기업과 사회, 환경이 공존하는 <br> 아름다운 세상을 꿈꾸고 있습니다!</p>
+                <p class="page_com">Buddy는 기업과 사회, 환경이 공존하는 <br> 아름다운 세상을 꿈꾸고 있습니다!</p>
                 <ul class="thumb_list">
                     <li class="item2">
                         <a href="">
@@ -784,7 +784,7 @@
                             <div class="thumb_box"></div>
                             <p class="thumb_tit">지역사회후원</p>
                             <div class="ico_box">
-                                <span class="ico_text">Week의 강력한 의지와 사명감으로 <br> 따뜻한 나눔을 실천하고 있습니다.</span>
+                                <span class="ico_text">Buddy의 강력한 의지와 사명감으로 <br> 따뜻한 나눔을 실천하고 있습니다.</span>
                             </div>
                         </a>
                     </li>
@@ -806,7 +806,7 @@
             <%--                <ul class="card_lst">--%>
             <%--                    <li class="item1">--%>
             <h3 class="cate_tit">언론보도</h3>
-            <p class="additional_text">최신 소식을 통해 Week의 보도자료를 소개합니다!</p>
+            <p class="additional_text">최신 소식을 통해 Buddy의 보도자료를 소개합니다!</p>
             <ul class="cate_lst">
                 <li>
                     <div class="circle-box">
@@ -819,7 +819,7 @@
                 <li>
                     <div class="circle-box">
                         <a href="">
-                            <p class="bd_content">Week, <br> 스마트 더블케어 "윜"패스 출시</p>
+                            <p class="bd_content">Buddy, <br> 스마트 더블케어 "버디"패스 출시</p>
                             <p class="bd_date">2023-07-18</p>
                         </a>
                     </div>
@@ -1039,7 +1039,7 @@
 <%--            <li>--%>
 <%--                <div class="circle-box">--%>
 <%--                    <a href="">--%>
-<%--                        <p class="bd_content">Week, <br> 스마트 더블케어 "윜"패스 출시</p>--%>
+<%--                        <p class="bd_content">Week, <br> 스마트 더블케어 "버디"패스 출시</p>--%>
 <%--                        <p class="bd_date">2023-07-18</p>--%>
 <%--                    </a>--%>
 <%--                </div>--%>

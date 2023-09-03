@@ -87,29 +87,29 @@
 <%--<head>--%>
 <%--    <meta charset="UTF-8">--%>
 <%--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
-<%--    <title>윜(Week)</title>--%>
+<%--    <title>버디(Buddy)</title>--%>
 <%--    <meta http-equiv="X-UA-Compatible" content="IE=edge">--%>
-<%--    <meta http-equiv="Author" content="Week 콘텐츠 제작팀">--%>
-<%--    <meta http-equiv="Publisher" content="Week 교육센터">--%>
-<%--    <meta http-equiv="Copyright" content="copyright@week.co.kr">--%>
+<%--    <meta http-equiv="Author" content="Buddy 콘텐츠 제작팀">--%>
+<%--    <meta http-equiv="Publisher" content="Buddy 교육센터">--%>
+<%--    <meta http-equiv="Copyright" content="copyright@Buddy.co.kr">--%>
 
 <%--    <!-- 검색엔진 최적화(SEO) -->--%>
-<%--    <meta name="Subject" content="Week">--%>
-<%--    <meta name="Keywords" content="Week, 교육 교재, 교과서, 스마트 교육">--%>
-<%--    <meta name="Description" content="Week는 초등, 중등, 고등 교육에 대한 교재와 교육을 실시하는 기관입니다.">--%>
+<%--    <meta name="Subject" content="Buddy">--%>
+<%--    <meta name="Keywords" content="Buddy, 교육 교재, 교과서, 스마트 교육">--%>
+<%--    <meta name="Description" content="Buddy는 초등, 중등, 고등 교육에 대한 교재와 교육을 실시하는 기관입니다.">--%>
 <%--    <!-- <meta name="Robots" content="noindex, nofllow"> -->--%>
 <%--    <meta name="robots" content="index,follow">--%>
 
 <%--    <!-- 오픈 그래프(Open graph)-->--%>
 <%--    <meta property="og:type" content="website">--%>
-<%--    <meta property="og:title" content="Week">--%>
+<%--    <meta property="og:title" content="Buddy">--%>
 <%--    <meta property="og:description" content="앞선 생각으로 더 큰 미래의 교육을 준비하는 기업">--%>
-<%--    <meta property="og:image" content="<%=path %>/images/weeklogo.png">--%>
+<%--    <meta property="og:image" content="<%=path %>/images/Buddylogo.png">--%>
 <%--    <meta property="og:url" content="<%=path %>">--%>
 
 <%--    <!-- 트위터 -->--%>
 <%--    <meta name="twitter:card" content="picture">--%>
-<%--    <meta name="twitter:title" content="Week">--%>
+<%--    <meta name="twitter:title" content="Buddy">--%>
 <%--    <meta name="twitter:description" content="앞선 생각으로 더 큰 미래의 교육을 준비하는 기업">--%>
 <%--    <meta name="twitter:image" content="https://kktlove.github.io/web01/images/chunjae_logo.png">--%>
 

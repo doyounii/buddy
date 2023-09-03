@@ -42,6 +42,6 @@
             <span>플러즈 (Pluz) 1577-6226</span>
             <span>브러즈 (Bruzz) 1577-1533</span>
         </p>
-        <p class="cp">COPYRIGHT 1981-2023 Week EDUCATION INC. ALL RIGHTS RESERVED.</p>
+        <p class="cp">COPYRIGHT 1981-2023 Buddy EDUCATION INC. ALL RIGHTS RESERVED.</p>
     </div>
 </footer>
