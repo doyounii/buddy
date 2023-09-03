@@ -75,12 +75,12 @@ html, css, javascript로 작성하였습니다. <br>
 ![unitTaskFlow](./readmeimage/기능흐름도.png "unitTaskFlow")
 <br>
 ## 실제 HOME
-![헤더](./readmeimage/bd01.jpg "헤더")
+![헤더](./readmeimage/bd01.JPG "헤더")
 <br>
 
 ## Member
-![멤버](./readmeimage/bd02.jpg "멤버")
-![멤버](./readmeimage/bd03.jpg "회원가입")
+![멤버](./readmeimage/bd02.JPG "멤버")
+![멤버](./readmeimage/bd03.JPG "회원가입")
 #### 회원가입
 #### • 회원 약관에 동의 시 회원가입 가능
 #### • 아이디 중복 체크가 완료 후에 가입 가능
