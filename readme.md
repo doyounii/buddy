@@ -104,8 +104,11 @@ html, css, javascript로 작성하였습니다. <br>
 
 ## Company
 ![회사소개](./readmeimage/bd6.JPG "회사소개")
+
 ![회사소개](./readmeimage/bd7.JPG "회사소개")
+
 ![회사소개](./readmeimage/bd8.JPG "회사소개")
+
 #### 회사소개
 #### • 정적 콘텐츠로 BUDDY에 대한 소개 페이지
 #### • "윜이란" 페이지 내에서 마우스 스크롤 또는 상단 버튼 클릭을 통해 BUDDY 이야기로 이동 가능
@@ -113,7 +116,9 @@ html, css, javascript로 작성하였습니다. <br>
 
 ## Board
 ![공지사항](./readmeimage/bd10.JPG "공지사항")
+
 ![공지사항](./readmeimage/bd9.JPG "공지사항")
+
 ![공지사항](./readmeimage/bd11.JPG "공지사항")
 #### 공지사항 (Buddy 교육게시판)
 #### • Board 테이블에서 공지사항 리스트를 불러와 출력
@@ -133,9 +138,13 @@ html, css, javascript로 작성하였습니다. <br>
 
 ## 1:1 문의, 버디 라운지
 ![버디라운지](./readmeimage/bd15_qna.JPG "버디라운지")
+
 ![버디라운지](./readmeimage/bd14_qna_write.JPG "버디라운지")
+
 ![버디라운지](./readmeimage/bd14_update.JPG "버디라운지")
+
 ![버디라운지](./readmeimage/bd15_qnacomment.JPG "버디라운지")
+
 
 #### • Qna 테이블에서 리스트를 불러와 출력
 #### • 로그인을 하지 않아도 모든 글/댓글의 열람은 가능하나 글/댓글 작성은 불가능함
@@ -147,9 +156,12 @@ html, css, javascript로 작성하였습니다. <br>
 
 ## 관리자페이지
 ![관리자페이지](./readmeimage/bd17_admin.JPG "관리자페이지")
+
 #### 관리자페이지
 #### 회원정보 관리
+
 ![관리자페이지](./readmeimage/bd18_adminmembder.JPG "관리자페이지")
+
 
 #### • member 테이블에서 회원 정보를 SELECT
 #### • 관리자는 원하는 회원을 강제 탈퇴 처리할 수 있음
