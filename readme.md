@@ -104,9 +104,9 @@ html, css, javascript로 작성하였습니다. <br>
 
 ## Company
 ![회사소개](./readmeimage/bd6.JPG "회사소개")
-
+<br>
 ![회사소개](./readmeimage/bd7.JPG "회사소개")
-
+<br>
 ![회사소개](./readmeimage/bd8.JPG "회사소개")
 
 #### 회사소개
@@ -115,11 +115,12 @@ html, css, javascript로 작성하였습니다. <br>
 <br>
 
 ## Board
+
 ![공지사항](./readmeimage/bd10.JPG "공지사항")
-
 ![공지사항](./readmeimage/bd9.JPG "공지사항")
-
 ![공지사항](./readmeimage/bd11.JPG "공지사항")
+
+
 #### 공지사항 (Buddy 교육게시판)
 #### • Board 테이블에서 공지사항 리스트를 불러와 출력
 #### • 로그인을 하지 않아도 공지사항을 열람할 수 있음
