@@ -1,67 +1,28 @@
 # 프로젝트
 ## 팀원 및 역할분담
-서광 <br>
-[설계]<br>
--usecase diagram 작성<br>
--WBS 작성<br>
--ERD, 클래스 다이어 그램 작성(언론보도 DB) 및 종합<br>
-[기능구현]<br>
--언론보도 구현 : 제목, 작성일, 링크를 DB에 저장 후 불러오기<br>
--기능 구현 영상 촬영 : 전체 홈페이지 기능 구현 동영상 촬영 및 업로드<br>
--unit task flow 작성 : 언론보도<br><br>
-이소윤<br>
-[설계]<br>
--요구사항 작성<br>
--unit task flow 작성 : 공지사항, 회사소개, 인재 채용<br>
--ERD, 클래스 다이어그램 작성 : 공지사항 DB, 인재 채용 DB<br>
-[기능]<br>
--관리자 페이지 제작 : 모든 게시판 리스트 보기, 각 게시판별 글 삭제, 수정 기능<br>
--윜소식, 공지사항 구현 : DB에서 제목을 받아와 리스트로 만들고, 제목 클릭 시 내용 보기 기능.<br>
--회사 소개, 인재 채용 구현 : 입사 지원 form을 입력 받아 DB에 연결 및 관리자 페이지에 표시<br><br>
-이은영<br>
-[설계]<br>
--요구사항 분석<br>
--프로토 타입 제작 : 카카오 oven 이용 제작.<br>
--홈페이지 메인 인덱스, 프론트엔드, css<br>
-[기능]<br>
--자주하는 질문 구현 : DB에서 가져와 sliding 기능 구현<br>
--readme 디자인, 종합, 작성<br><br>
-한선<br>
-[설계]<br>
--ERD, 클래스 다이어그램 작성 : 1:1문의 DB, 댓글 DB<br>
-[기능]<br>
--1:1 문의(게시판) 구현 : 질문과 답글을 나누어 리스트화, 답글은 질문글에 lev값을 부여하여 연결<br>
--게시판 댓글 기능 : 1:1문의 글 상세보기 페이지 내 댓글 등록 및 삭제 가능<br>
--관리자 페이지 : 회원 탈퇴, 관리자의 회원 강퇴 기능 구현<br>
--고객만족센터, 오시는 길 구현<br>
-
-
+###  이소윤개인 프로젝트 1번
+<br>
 ## 프로젝트 소개
-"Week can do it!" - 교육 기업 "Week"
+"Buddy Learn!" - 교육 기업 "Buddy"
 
-🌟 Welcome to Week - Your Learning Partner 🌟
+🌟 Welcome to Buddy - Your Learning Partner 🌟
 
-"Week"는 "Week can do it!"라는 슬로건 아래, 우리의 열정과 노력이 담긴 가상 교육 기업을 소개합니다.
+"Buddy"는 "Buddy Learn!"라는 슬로건 아래, 우리의 열정과 노력이 담긴 가상 교육 기업을 소개합니다.
 
-🏢 About Us: 회사 소개 - '윜'이란?, '윜'스토리, 사회공헌
+🏢 About Us: 회사 소개 - Buddy란?, Buddy 이야기, 사회공헌
 
-📢 Announcements: 공지사항
-
-📰 Press Coverage: 언론보도
+📢 Announcements: Buddy 교육 게시판
 
 ❓ FAQs: 고객만족센터 - 자주하는질문
 
 👥 Join Our Team: 인재채용 - 윜크루 되기, 윜크루 되면
 
-📝 Contact Us: 1:1문의
+📝 Buddy 커뮤니티: 버디 라운지 - 답변, 댓글 달기 
 
-🌟 Explore More - Weekly & Weekend
-
-"Week"의 문을 열고, 함께하는 특별한 여정을 시작해보세요. <br>
-우리는 "Week can do it!"라는 슬로건을 실천하기 위해 항상 노력하겠습니다. 
+"Buddy"의 문을 열고, 함께하는 특별한 여정을 시작해보세요. <br>
 
 감사합니다,
-"Week" 팀 드림
+"Buddy" 드림
 
 ## 프로젝트 개요
 회원의 1:1 문의글 목록, 문의글 상세보기, 문의글 등록, 문의글 수정, 문의글 삭제 등의 기능을 구현하였으며,<br>
@@ -75,15 +36,10 @@ html, css, javascript로 작성하였습니다. <br>
 <br>
 <br>
 해당 프로젝트는 가장 기본적인 회원가입과, 로그인, 로그아웃, 오시는 길, 회원 정보, 회원 탈퇴 관련된 기능들을 <br>
-뿐만 아니라 회사소개, 공지사항, 언론보도, 자주하는질문과 1:1과 인재채용까지 메뉴바로 구현하였습니다.<br>
+뿐만 아니라 회사소개, 공지사항, 자주하는질문과 회원들이 자유롭게 소통할 수 있는 "버디 라운지"까지 메뉴바로 구현하였습니다.<br>
 그와 관련된 메뉴들은 메뉴바를 통해 보실 수 있습니다.<br>
-또, 홈페이지의 메인에 자회사인 "Weekly", "Weekend"로 바로 넘어갈 수 있는 버튼과 <br>
 굳이 메뉴에 들어가지 않고도 메인 홈페이지만으로 Week가 한 눈에 보일 수 있도록 CSS를 구현하였습니다.<br>
 
-
-## 기능구현 동영상
-영상 링크 : https://youtu.be/sinl5TXBwlA <br>
-![위의 링크를 클릭하시면 홈페이지 구현 영상을 보실 수 있습니다!](./weektest.mp4)
 
 
 ## 프로젝트 설계
@@ -109,29 +65,28 @@ html, css, javascript로 작성하였습니다. <br>
 ![물리적 설계](./readmeimage/물리적설계.png "물리적 설계")
 <br>
 ## 클래스 다이어그램
-![클래스 다이어그램](./readmeimage/classdiagram.png "클래스 다이어그램")
+![클래스 다이어그램](./readmeimage/erd.png "클래스 다이어그램")
 <br>
 ## Table
 ![테이블 구현](./readmeimage/dbtables.png "테이블 구현")
-![테이블 구현](./readmeimage/tableERD.png "테이블 구현")
 <br>
 
 ## 기능흐름도 (Unit Task Flow)
 ![unitTaskFlow](./readmeimage/기능흐름도.png "unitTaskFlow")
 <br>
-## OVEN HOME
-![home](./readmeimage/oven.jpg "헤더")
 ## 실제 HOME
-![헤더](./readmeimage/home.png "헤더")
+![헤더](./readmeimage/bd01.JPG "헤더")
 <br>
 
 ## Member
-![멤버](./readmeimage/members.png "멤버")
+![멤버](./readmeimage/bd02.JPG "멤버")
+![멤버](./readmeimage/bd03.JPG "회원가입")
 #### 회원가입
 #### • 회원 약관에 동의 시 회원가입 가능
 #### • 아이디 중복 체크가 완료 후에 가입 가능
 #### • 비밀번호와 비밀번호 확인의 값이 일치해야 최종 회원가입 성공
 #### • 비밀번호는 SHA-256 방식으로 암호화하였음
+
 #### 로그인
 #### • DB에서 비밀번호를 불러와 비교 후 로그인 성공 또는 실패
 #### • 일반 회원과 달리 "admin" 관리자 계정으로 로그인 시에는 "관리자페이지" 접속 가능
