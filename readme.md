@@ -104,11 +104,11 @@ html, css, javascript로 작성하였습니다. <br>
 <br>
 
 ## Company
-![회사소개](./readmeimage/bd6.JPG "회사소개")
+![회사소개](./readmeimage/bd06.JPG "회사소개")
 <br>
-![회사소개](./readmeimage/bd7.JPG "회사소개")
+![회사소개](./readmeimage/bd07.JPG "회사소개")
 <br>
-![회사소개](./readmeimage/bd8.JPG "회사소개")
+![회사소개](./readmeimage/bd08.JPG "회사소개")
 
 #### 회사소개
 #### • 정적 콘텐츠로 BUDDY에 대한 소개 페이지
@@ -118,7 +118,7 @@ html, css, javascript로 작성하였습니다. <br>
 ## Board
 
 ![공지사항](./readmeimage/bd10.JPG "공지사항")
-![공지사항](./readmeimage/bd9.JPG "공지사항")
+![공지사항](./readmeimage/bd09.JPG "공지사항")
 ![공지사항](./readmeimage/bd11.JPG "공지사항")
 
 
