@@ -162,7 +162,7 @@ html, css, javascript로 작성하였습니다. <br>
 #### 관리자페이지
 #### 회원정보 관리
 
-![관리자페이지](./readmeimage/bd18_adminmembder.JPG "관리자페이지")
+![관리자페이지](./readmeimage/bd18_adminmember.JPG "관리자페이지")
 
 
 #### • member 테이블에서 회원 정보를 SELECT
